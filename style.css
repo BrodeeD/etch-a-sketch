@@ -1,0 +1,121 @@
+:root{
+  --green1 : rgb(0, 100, 102);
+  --green2 : rgb(6, 90, 96);
+  --green3 : rgb(11, 82, 91);
+  --green4 : rgb(27, 58, 75);
+  --purple1: rgb(33, 47, 69);
+  --purple2: rgb(39, 38, 64);
+  --purple3: rgb(49, 34, 68);
+  --purple4: rgb(62, 31, 71);
+  --purple5: rgb(77, 25, 77);
+
+}
+body{
+  height: 100vh;
+  background-color: var(--purple1);
+}
+*{
+  font-family: 'Indie Flower', cursive;
+}
+.container{
+  width: 550px;
+  height: 550px;
+  column-gap: 0;
+  row-gap: 0;
+
+  background-color: var(--green3);
+  display: grid;
+  justify-self: center;
+  padding: 15px;
+  border-radius: 25px;
+}
+.grid{
+  border: solid black 1.5px;
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
+
+/* HEADER AND FOOTER */
+
+.UI{
+  background-color: var(--purple2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+.header {
+  background-color: var(--purple1);
+  width: 100%;
+  font-size: 20px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--green1);
+}
+p{
+  font-size: 25px;
+}
+.footer p{
+  font-size: 20px;
+}
+h1{
+  font-size: 80px;
+  color: white;
+}
+.header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.header ul a {
+  padding-bottom: 5px;
+  padding-right: 30px;
+}
+.footer{
+  text-align: center;
+  background-color: var(--purple1);
+  color: white;
+  padding: 15px;
+}
+button{
+  margin: 5px;
+  background-color: var(--green1);
+  border: 6px solid var(--green2);
+  color: white;
+  border-radius: 16px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 10px;
+  font-size: 25px;
+  margin: 10px;
+  font-family: 'Indie Flower', cursive;
+
+}
+button:active {
+  background-color:  white;
+  color: var(--green3);
+}
+button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: opacity(50%);
+}
